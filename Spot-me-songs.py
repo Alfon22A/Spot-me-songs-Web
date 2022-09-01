@@ -13,10 +13,8 @@ from Recommender import recommender
 
 def main ():
 	
-	icon = st.image("Images/Spot-me-songs.png")
 	st.set_page_config(
         page_title="Spot-me-songs",
-        page_icon=icon,
 		initial_sidebar_state="collapsed")
 	options = ["Main", "Stop"]
 	choice = st.sidebar.selectbox("Menu", options, key = "1")
