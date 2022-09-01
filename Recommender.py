@@ -81,7 +81,9 @@ def recommender(track):
 		url = examples.iloc[2]["ID"]
 		embed = "https://open.spotify.com/embed/track/{}?utm_source=generator".format(url)
 		spotify = '<iframe style="border-radius:12px" src={} width="100%" height="80" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>'.format(embed)
-		c.markdown(spotify, unsafe_allow_html=True)  
+		c.markdown(spotify, unsafe_allow_html=True)
+		
+		c.write("Click on your song again for more recommendations!")
 		
 	else:
 		examples = songs[(songs["Label"] == "N") & (songs["Cluster"] == cluster[0])].sample(3)
@@ -105,3 +107,5 @@ def recommender(track):
 		embed = "https://open.spotify.com/embed/track/{}?utm_source=generator".format(url)
 		spotify = '<iframe style="border-radius:12px" src={} width="100%" height="80" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>'.format(embed)
 		c.markdown(spotify, unsafe_allow_html=True)
+		
+		c.write("Click on your song again for more recommendations!")
