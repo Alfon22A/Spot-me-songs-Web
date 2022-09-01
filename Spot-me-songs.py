@@ -31,14 +31,13 @@ def main ():
 				
 				if len(results["tracks"]["items"]) > 0:
 					
-					st.write("Pick the one you meant:")
+					st.write("Click on the one you meant:")
 					
 					try:
 						for track in results["tracks"]["items"]:
 							selection = st.button("{} by {} from {}".format(track["name"], track["artists"][0]["name"], track["album"]["name"]))
-							url = track["external_urls"]["spotify"]
-							url2 = url.split("m/t")
-							embed = url2[0]+"m/embed/t"+url2[1]
+							url = track["id"]
+							embed = "https://open.spotify.com/embed/track/{}?utm_source=generator&theme=0".format(url)
 							spotify = '<iframe style="border-radius:12px" src={} width="100%" height="80" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>'.format(embed)
 							st.markdown(spotify, unsafe_allow_html=True)
 						
