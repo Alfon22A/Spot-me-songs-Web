@@ -67,19 +67,19 @@ def recommender(track):
 
 		c.write("{} by {}".format(examples.iloc[0]["Song"], examples.iloc[0]["Artist"]))
 		url = examples.iloc[0]["ID"]
-		embed = "https://open.spotify.com/embed/track/{}?utm_source=generator&theme=0".format(url)
+		embed = "https://open.spotify.com/embed/track/{}?utm_source=generator".format(url)
 		spotify = '<iframe style="border-radius:12px" src={} width="100%" height="80" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>'.format(embed)
 		c.markdown(spotify, unsafe_allow_html=True)
 		
 		c.write("{} by {}".format(examples.iloc[1]["Song"], examples.iloc[1]["Artist"]))
 		url = examples.iloc[1]["ID"]
-		embed = "https://open.spotify.com/embed/track/{}?utm_source=generator&theme=0".format(url)
+		embed = "https://open.spotify.com/embed/track/{}?utm_source=generator".format(url)
 		spotify = '<iframe style="border-radius:12px" src={} width="100%" height="80" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>'.format(embed)
 		c.markdown(spotify, unsafe_allow_html=True)
 		
 		c.write("{} by {}".format(examples.iloc[2]["Song"], examples.iloc[2]["Artist"]))
 		url = examples.iloc[2]["ID"]
-		embed = "https://open.spotify.com/embed/track/{}?utm_source=generator&theme=0".format(url)
+		embed = "https://open.spotify.com/embed/track/{}?utm_source=generator".format(url)
 		spotify = '<iframe style="border-radius:12px" src={} width="100%" height="80" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>'.format(embed)
 		c.markdown(spotify, unsafe_allow_html=True)  
 		
@@ -90,18 +90,18 @@ def recommender(track):
 
 		c.write("{} by {}".format(examples.iloc[0]["Song"], examples.iloc[0]["Artist"]))
 		url = examples.iloc[0]["ID"]
-		embed = "https://open.spotify.com/embed/track/{}?utm_source=generator&theme=0".format(url)
+		embed = "https://open.spotify.com/embed/track/{}?utm_source=generator".format(url)
 		spotify = '<iframe style="border-radius:12px" src={} width="100%" height="80" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>'.format(embed)
 		c.markdown(spotify, unsafe_allow_html=True)
 		
 		c.write("{} by {}".format(examples.iloc[1]["Song"], examples.iloc[1]["Artist"]))
 		url = examples.iloc[1]["ID"]
-		embed = "https://open.spotify.com/embed/track/{}?utm_source=generator&theme=0".format(url)
+		embed = "https://open.spotify.com/embed/track/{}?utm_source=generator".format(url)
 		spotify = '<iframe style="border-radius:12px" src={} width="100%" height="80" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>'.format(embed)
 		c.markdown(spotify, unsafe_allow_html=True)
 		
 		c.write("{} by {}".format(examples.iloc[2]["Song"], examples.iloc[2]["Artist"]))
 		url = examples.iloc[2]["ID"]
-		embed = "https://open.spotify.com/embed/track/{}?utm_source=generator&theme=0".format(url)
+		embed = "https://open.spotify.com/embed/track/{}?utm_source=generator".format(url)
 		spotify = '<iframe style="border-radius:12px" src={} width="100%" height="80" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>'.format(embed)
 		c.markdown(spotify, unsafe_allow_html=True)
