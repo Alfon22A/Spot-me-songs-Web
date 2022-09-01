@@ -15,6 +15,7 @@ def main ():
 	
 	st.set_page_config(
         page_title="Spot-me-songs",
+        page_icon=":headphones:",
 		initial_sidebar_state="collapsed")
 	options = ["Main", "Stop"]
 	choice = st.sidebar.selectbox("Menu", options, key = "1")
