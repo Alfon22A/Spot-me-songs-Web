@@ -15,7 +15,6 @@ def main ():
 	
 	st.set_page_config(
         page_title="Spot-me-songs",
-        page_icon=st.image("https://github.com/Alfon22A/Spot-me-songs-Web/blob/master/Images/Spot-me-songs.ico"),
 		initial_sidebar_state="collapsed")
 	options = ["Main", "Stop"]
 	choice = st.sidebar.selectbox("Menu", options, key = "1")
