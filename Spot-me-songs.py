@@ -13,6 +13,10 @@ from Recommender import recommender
 
 def main ():
 	
+	st.set_page_config(
+        page_title="Spot-me-songs",
+        page_icon="https://github.com/Alfon22A/Spot-me-songs-Web/blob/master/Images/Spot-me-songs.png",
+		initial_sidebar_state="collapsed")
 	options = ["Main", "Stop"]
 	choice = st.sidebar.selectbox("Menu", options, key = "1")
 	if (choice == "Main"):
