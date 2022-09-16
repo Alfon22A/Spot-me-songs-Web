@@ -60,5 +60,7 @@ def main ():
 			
 	else:
 		st.stop()
-    
+		
+    st.write("Try other apps!")
+	st.markdown("[Character-Selection](https://alfon22a-character-selection-web-character-selection-lj9a0x.streamlitapp.com/)")
 main()
