@@ -58,8 +58,8 @@ def main ():
 					
 			search_song(song)
 			
-	st.write("Try other apps!")
-	st.markdown("[Character-Selection](https://alfon22a-character-selection-web-character-selection-lj9a0x.streamlitapp.com/)")		
+		st.write("Try other apps!")
+		st.markdown("[Character-Selection](https://alfon22a-character-selection-web-character-selection-lj9a0x.streamlitapp.com/)")		
 	
 	else:
 		st.stop()
